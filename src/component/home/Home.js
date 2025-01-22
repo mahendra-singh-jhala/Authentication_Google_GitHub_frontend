@@ -11,6 +11,7 @@ const Home = () => {
         const getUser = async () => {
             try {
                 const res = await axios.get("https://authentication-google-github-backend.onrender.com/login/success", { withCredentials: true })
+                console.log(res)
                 setuserData(res.data.user)
             } catch (error) {
                 console.log("Not get user", error)
