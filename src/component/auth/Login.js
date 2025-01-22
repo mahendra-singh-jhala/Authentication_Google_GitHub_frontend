@@ -6,11 +6,11 @@ import google from "../../asset/google.png"
 const Login = () => {
 
     const loginwithgoogle = () => {
-        window.open("http://localhost:5000/auth/google", "_self")
+        window.open("https://authentication-google-github-backend.onrender.com/auth/google", "_self")
     };
 
     const loginwithgithub = () => {
-        window.open("http://localhost:5000/auth/github", "_self")
+        window.open("https://authentication-google-github-backend.onrender.com/auth/github", "_self")
     };
 
     return (
