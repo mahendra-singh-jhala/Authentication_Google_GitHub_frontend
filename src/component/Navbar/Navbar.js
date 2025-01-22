@@ -13,9 +13,6 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 
-const settings = ['Logout'];
-
-
 const Navbar = () => {
     const [user, setUser] = useState(null);
 
