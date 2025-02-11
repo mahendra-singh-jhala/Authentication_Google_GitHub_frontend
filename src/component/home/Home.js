@@ -10,7 +10,7 @@ const Home = () => {
     useEffect(() => {
         const getUser = async () => {
             try {
-                const res = await axios.get("https://authentication-google-github-backend.onrender.com/login/success", { withCredentials: true })
+                const res = await axios.get("http://localhost:5000/login/success", { withCredentials: true })
                 console.log(res)
                 setuserData(res.data.user)
             } catch (error) {

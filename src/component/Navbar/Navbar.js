@@ -29,7 +29,7 @@ const Navbar = () => {
     useEffect(() => {
         const getUser = async () => {
             try {
-                const res = await axios.get("https://authentication-google-github-backend.onrender.com/login/success", {withCredentials: true})
+                const res = await axios.get("http://localhost:5000/login/success", {withCredentials: true})
                 setuserData(res.data.user)
             } catch (error) {
                 console.log("Not get user", error)
@@ -40,7 +40,7 @@ const Navbar = () => {
     }, [])
 
     const logout = () => {
-        window.open("https://authentication-google-github-backend.onrender.com/logout", "_self")
+        window.open("http://localhost:5000/logout", "_self")
     }
 
     return (
